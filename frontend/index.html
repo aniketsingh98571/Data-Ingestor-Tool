@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Ingestor Tool</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div class="OuterContainer">
+        <div class="InnerContainer">
+            <div class="HeaderContainer">
+                <h1>Data Ingestor Tool</h1>
+            </div>
+            <div class="SubInfoContainer">
+                <h3>Search your logs efficiently</h3>
+            </div>
+            <div class="ActionsContainer">
+                <div class="SearchInputContainer">
+                    <input type="text" placeholder="Search logs"/>
+                </div>
+                <div class="FilterContainer">
+                    <select name="options" id="options">
+                        <option value="level">level</option>
+                        <option value="message">message</option>
+                        <option value="resourceId">resourceId</option>
+                        <option value="timestamp">timestamp</option>
+                        <option value="traceId">traceId</option>
+                        <option value="spanId">spanId</option>
+                        <option value="commit">traceId</option>
+                        <option value="spanId">spanId</option>
+                        <option value="parentResourceId">parentResourceId</option>
+                      </select>
+                </div>
+                <div class="SubmitButtonContainer">
+                    <button type="button">Submit</button>
+                </div>
+            </div>
+            <div class="CardsContainer">
+                <div class="InnerCardsContainer" id="CardsId">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

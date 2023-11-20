@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.HeaderContainer h1{
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: sans-serif;
+}
+.SubInfoContainer h3{
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-family: sans-serif;
+}
+.ActionsContainer{
+    margin: 20px auto 0 auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SearchInputContainer{
+    width: 50%;
+}
+.SearchInputContainer input{
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+}
+.FilterContainer{
+    width: 20%;
+}
+.FilterContainer select{
+    padding: 8px 0;
+}
+.SubmitButtonContainer{
+    width: 20%;
+}
+.SubmitButtonContainer button{
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.SingleCard{
+    border: 2px solid black;
+    padding: 10px;
+}
+.InnerCardsContainer{
+    width: 95%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-direction: column; */
+}
+.SingleCard{
+    width:20% ;
+}
