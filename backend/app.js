@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const {connectToDb}=require('./utils/database')
 const app = express();
 
 //using the cors package
@@ -29,3 +30,6 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "*");
   next();
 });
+connectToDb(()=>{
+  app.listen(8080);
+})
