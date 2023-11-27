@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const {connectToDb}=require('./utils/database')
+const databaseRoutes=require('./routes/DbRoutes/createDb')
 const app = express();
 
 //using the cors package
@@ -18,6 +19,8 @@ app.use(function (req, res, next) {
 
 //using the bodyParser
 app.use(bodyParser.json()); //application/json
+
+
 // Solving the CORS errors
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*"); //Allowing the access from all the domains
@@ -33,3 +36,4 @@ app.use((req, res, next) => {
 connectToDb(()=>{
   app.listen(8080);
 })
+app.use("/database",databaseRoutes)

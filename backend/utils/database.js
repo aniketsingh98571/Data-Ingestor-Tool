@@ -6,6 +6,7 @@ const db=mysql.createConnection({
     host:"localhost",
     user:'root',
     "password":"Aniket@123",
+    database:"ingestor"
   });
   //connect to db
  db.connect((err)=>{
@@ -13,7 +14,6 @@ const db=mysql.createConnection({
       console.log(err)
       throw  err;
     }
-    
       _db=db
       callback()
      
